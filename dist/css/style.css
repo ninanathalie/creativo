@@ -15,8 +15,6 @@ body {
   font-family: "Poppins", sans-serif;
   color: #333333;
   font-size: calc(0.75em + 0.5vmin);
-
-  height: 200vh;
 }
 
 html {
