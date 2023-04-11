@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Creativo</title>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="dist/css/style.css" />
+  </head>
+  <body>
+    <header class="scroll-header">
+      <div class="container">
+        <div class="logo">
+          <a href="/">
+            <img src="dist/images/logo-creativo.png" alt="" />
+          </a>
+        </div>
+        <input type="checkbox" id="nav-toggle" class="nav-toggle" />
+        <nav>
+          <ul>
+            <li>
+              <a href="#">Our Competencies <img src="dist/images/crtv-caret-down.svg" alt="" /></a>
+            </li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+          <ul class="socials hide-for-web">
+            <li>
+              <a href="#"><img src="dist/images/crtv-linkedin.svg" alt="" /></a>
+            </li>
+            <li>
+              <a href="#"><img src="dist/images/crtv-phone.svg" alt="" /></a>
+            </li>
+            <li>
+              <a href="#"><img src="dist/images/crtv-email.svg" alt="" /></a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="socials hide-mob">
+          <ul>
+            <li>
+              <a href="#"><img src="dist/images/crtv-linkedin.svg" alt="" /></a>
+            </li>
+            <li>
+              <a href="#"><img src="dist/images/crtv-phone.svg" alt="" /></a>
+            </li>
+            <li>
+              <a href="#"><img src="dist/images/crtv-email.svg" alt="" /></a>
+            </li>
+          </ul>
+        </div>
+
+        <label for="nav-toggle" class="nav-toggle-label">
+          <span></span>
+        </label>
+      </div>
+    </header>
+
+    <main>
+      <section id="hero">
+        <div class="container">
+          <div class="hero-col">
+            <h1>Building Digital Products, Brands & Experience</h1>
+          </div>
+          <div class="hero-col">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet sit ornare sem lorem nec nunc neque facilisis. Netus ut ornare duis placerat ultrices aliquam.</p>
+            <button>
+              <div>Let's start <br /><span>a new project together</span></div>
+              <div><img src="dist/images/crtv-arrow-right.svg" alt="" /></div>
+            </button>
+          </div>
+        </div>
+
+        <div class="container-fluid">
+          <picture>
+            <source media="(min-width: 769px)" srcset="dist/images/crtv-header.jpg" />
+            <source media="(min-width: 0)" srcset="dist/images/mob/crtv-header.jpg" />
+            <img src="dist/images/crtv-header.jpg" class="para" />
+          </picture>
+        </div>
+      </section>
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+    <script>
+      $(function () {
+        $(window).on("scroll", function () {
+          if ($(window).scrollTop() > 50) {
+            $(".scroll-header").addClass("active");
+          } else {
+            //remove the background property so it comes transparent again (defined in your css)
+            $(".scroll-header").removeClass("active");
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
