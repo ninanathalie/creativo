@@ -26,6 +26,10 @@ img {
   height: auto;
 }
 
+a {
+  text-decoration: none;
+}
+
 .container {
   max-width: 1128px;
   margin: 0 auto;
@@ -193,13 +197,13 @@ header .socials li {
   }
 }
 
-@media screen and (min-width: 769px) and (max-width: 1559px) {
+@media screen and (min-width: 821px) and (max-width: 1559px) {
   header .container {
     max-width: 1128px;
   }
 }
 
-@media (min-width: 769px) {
+@media (min-width: 821px) {
   header .nav-toggle-label {
     display: none;
   }
@@ -262,7 +266,7 @@ header .socials li {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 820px) {
   .hide-mob {
     display: none;
   }
@@ -366,7 +370,7 @@ header .socials li {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 820px) {
   #hero .container {
     grid-template-columns: 1fr;
     grid-gap: 0;
@@ -513,7 +517,7 @@ header .socials li {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 820px) {
   #competencies .competencies {
     width: 100% !important;
     max-width: 100% !important;
@@ -759,6 +763,14 @@ header .socials li {
   #contact .contact-title h1 {
     font-size: calc(2.5em + 0.75vmin);
   }
+}
+
+@media (max-width: 820px) {
+  #contact .container {
+    grid-template-columns: 1fr;
+    grid-gap: 0;
+    margin-bottom: 40px;
+  }
 
   #contact .contact-title h1 {
     text-align: left;
@@ -769,13 +781,9 @@ header .socials li {
     animation: right-slid 3s ease;
     margin-left: 0;
   }
-}
 
-@media (max-width: 768px) {
-  #contact .container {
-    grid-template-columns: 1fr;
-    grid-gap: 0;
-    margin-bottom: 40px;
+  #contact .container .contact-col img {
+    width: 60%;
   }
 }
 
@@ -783,6 +791,10 @@ header .socials li {
   #contact .container-title {
     padding-left: 24px;
     padding-right: 24px;
+  }
+
+  #contact .container .contact-col img {
+    width: 80%;
   }
 }
 
@@ -826,7 +838,7 @@ footer .linkedin {
   max-width: 40px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 820px) {
   footer {
     margin-top: 6rem;
   }
