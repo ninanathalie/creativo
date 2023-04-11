@@ -83,7 +83,120 @@
           </picture>
         </div>
       </section>
+
+      <section id="competencies">
+        <div class="container">
+          <div class="competencies-inner">
+            <div class="competencies-wrap-1">
+              <div class="competencies">
+                <div class="competencies-inner">
+                  <div class="competencies-main">
+                    <div class="competencies-body">
+                      <h1 class="crtv-icon"><img src="dist/images/crtv-icon.svg" alt="" /> Our Competencies</h1>
+                      <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet sit ornare sem lorem nec nunc neque facilisis. Netus ut ornare duis placerat ultrices aliquam.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="competencies">
+                <div class="competencies-inner">
+                  <div class="competencies-main">
+                    <div class="competencies-body">
+                      <h4 class="crtv-icon"><img src="dist/images/crtv-icon.svg" alt="" />Service</h4>
+                      <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit turpis blandit consequat bibendum varius.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="competencies-wrap-2">
+              <div class="competencies">
+                <div class="competencies-inner">
+                  <div class="competencies-main">
+                    <div class="competencies-body">
+                      <h4 class="crtv-icon"><img src="dist/images/crtv-icon.svg" alt="" />Development</h4>
+                      <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit turpis blandit consequat bibendum varius.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="competencies-wrap-3">
+              <div class="competencies">
+                <div class="competencies-inner">
+                  <div class="competencies-main">
+                    <div class="competencies-body">
+                      <h4 class="crtv-icon"><img src="dist/images/crtv-icon.svg" alt="" />Essentials</h4>
+                      <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit turpis blandit consequat bibendum varius.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="competencies">
+                <div class="competencies-inner">
+                  <div class="competencies-main">
+                    <div class="competencies-body">
+                      <h4 class="crtv-icon"><img src="dist/images/crtv-icon.svg" alt="" />Management & Consultancy</h4>
+                      <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit turpis blandit consequat bibendum varius.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="competencies-shape">
+          <img src="dist/images/crtv-wave.png" alt="" />
+        </div>
+      </section>
+
+      <section id="contact">
+        <div class="container-title">
+          <div class="contact-title">
+            <h1>Don’t know</h1>
+            <h1>where to start?</h1>
+          </div>
+        </div>
+        <div class="container">
+          <div class="contact-col">
+            <img src="dist/images/crtv-contact-img.png" alt="" />
+          </div>
+          <div class="contact-col">
+            <form id="form" action="https://www.freecodecamp.com/email-submit">
+              <input id="name" type="text" placeholder="Name" required />
+              <input id="email" type="email" name="email" placeholder="E-mail" required />
+              <input id="mobile" type="mobile" name="mobile" placeholder="Mobile" required />
+              <textarea id="message" rows="10" placeholder="Message" required></textarea>
+              <div class="crtv-checkbox">
+                <input id="checkbox" type="checkbox" checked />
+                <label for="checkbox">I agree that my contact details and assignment for any queries are permanently stored.</label>
+              </div>
+
+              <button>
+                <div>Submit</div>
+                <div><img src="dist/images/crtv-arrow-right.svg" alt="" /></div>
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
     </main>
+
+    <footer>
+      <div class="container">
+        <div class="footer-col"><p>© 2022 Creativo Copyrights. All Rights Reserved</p></div>
+        <div class="footer-col">
+          <ul class="">
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Disclaimer</a></li>
+            <li><a href="#">Sitemap</a></li>
+            <li class="linkedin hide-mob">
+              <a href="#"><img src="dist/images/crtv-linkedin-footer.svg" alt="" /></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 
@@ -93,7 +206,6 @@
           if ($(window).scrollTop() > 50) {
             $(".scroll-header").addClass("active");
           } else {
-            //remove the background property so it comes transparent again (defined in your css)
             $(".scroll-header").removeClass("active");
           }
         });
