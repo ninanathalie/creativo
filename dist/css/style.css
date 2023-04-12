@@ -135,6 +135,10 @@ nav img {
   margin-left: 0.5em;
 }
 
+nav .socials img {
+  max-width: 24px;
+}
+
 header .nav-toggle {
   display: none;
 }
@@ -220,7 +224,7 @@ header .socials li {
     padding-right: 32px;
   }
 
-  header .hide-for-web {
+  .hide-for-web {
     display: none;
   }
 

@@ -13,6 +13,45 @@
   </head>
   <body>
     <header class="scroll-header">
+      <style>
+        .dropdown {
+          float: left;
+          overflow: hidden;
+        }
+
+        .dropdown .dropbtn {
+          border: none;
+          outline: none;
+          background-color: inherit;
+          font-family: inherit;
+          margin: 0;
+        }
+
+        .dropdown-content {
+          display: none;
+          position: absolute;
+          background-color: #f9f9f9;
+          min-width: 160px;
+          /* box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2); */
+          z-index: 1;
+        }
+
+        .dropdown-content a {
+          float: none;
+          padding: 12px 16px;
+          text-decoration: none;
+          display: block;
+          text-align: left;
+        }
+
+        .dropdown-content a:hover {
+          background-color: #ddd;
+        }
+
+        .dropdown:hover .dropdown-content {
+          display: block;
+        }
+      </style>
       <div class="container">
         <div class="logo">
           <a href="/">
@@ -169,7 +208,7 @@
             <form id="form" action="https://www.freecodecamp.com/email-submit">
               <input id="name" type="text" placeholder="Name" required />
               <input id="email" type="email" name="email" placeholder="E-mail" required />
-              <input id="mobile" type="mobile" name="mobile" placeholder="Mobile" required />
+              <input id="mobile" type="tel" name="mobile" placeholder="Mobile" required />
               <textarea id="message" rows="10" placeholder="Message" required></textarea>
               <div class="crtv-checkbox">
                 <input id="checkbox" type="checkbox" checked />
@@ -188,7 +227,12 @@
 
     <footer>
       <div class="container">
-        <div class="footer-col"><p>© 2022 Creativo Copyrights. All Rights Reserved</p></div>
+        <div class="footer-col">
+          <p>
+            © 2022 Creativo Copyrights. <br class="hide-for-web" />
+            All Rights Reserved
+          </p>
+        </div>
         <div class="footer-col">
           <ul class="">
             <li><a href="#">Privacy Policy</a></li>
